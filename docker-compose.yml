@@ -1,0 +1,9 @@
+version: '3'
+services:
+  manager:
+    build:
+      context: ./build_image
+      dockerfile: "Dockerfile.txt"
+    
+  postgre:
+    image: postgres:latest
