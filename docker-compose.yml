@@ -3,13 +3,8 @@ version: "3"
 services:
 
   manager:
-    build:
-      context: ./dockerfile
-      dockerfile: "Dockerfile.txt"
-    image: "manager:latest"
-
-    ports: 
-      - "8000:8000"
+    build: .
+    image: "app:latest"
     depends_on: 
       - "db"
     environment: 
